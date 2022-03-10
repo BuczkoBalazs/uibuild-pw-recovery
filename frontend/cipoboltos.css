@@ -1,0 +1,128 @@
+/* CSS reset begins */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+  }
+  a{
+    text-decoration: none;
+  }
+  a img {
+    border: none;
+  }
+  
+  button,
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button,
+  textarea,
+  select {
+    appearance: none !important;
+    border-radius: 0;
+  }
+  
+/* CSS reset ends */
+
+body {
+    background-color: #f2f2f2;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+
+#root h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #006837;
+}
+
+
+#root div {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    max-width: 520px;
+    height: fit-content;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #467745;
+    line-height: 1.2em;
+    background-color: #f9c582;
+}
+
+#root div span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+#root div input {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: 64px;
+    margin-top: 10px;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #98a991;
+    background-color: white;
+}
+
+#root button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    margin: 0 20px 20px 0;
+    border-radius: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    text-align: center;
+    color: #006837;
+    background-color: #f9c582;
+}
+
+@media screen and (max-width: 520px) {
+    #root h1 {
+        font-size: 24px;
+    }
+    #root div {
+        width: 100%;
+    }
+    #root div input {
+        width: calc(100% - 40px);
+    }
+}
+  
